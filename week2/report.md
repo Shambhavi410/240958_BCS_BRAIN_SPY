@@ -2,8 +2,6 @@
 
 ## Description of Approach
 
-The goal of this assignment was to understand how to read, interpret, and visualize medical imaging data stored in NIfTI (.nii) and DICOM (.dcm) formats using Python. The workflow involved:
-
 - Loading NIfTI files using the `nibabel` library and inspecting their metadata and structure.
 - Reading a series of DICOM files using `pydicom`, extracting relevant metadata, and stacking slices to form a 3D volume.
 - Visualizing different anatomical planes (axial, sagittal, coronal) using `matplotlib`.
