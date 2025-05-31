@@ -47,7 +47,7 @@ sample.ImagePositionPatient
 
 Steps:
 1. Read all DICOM slices in a folder.
-2. Sort using `ImagePositionPatient[2]` or `InstanceNumber`.
+2. Sort using `ImagePositionPatient[2]`.
 3. Stack using numpy.
 
 ```python
