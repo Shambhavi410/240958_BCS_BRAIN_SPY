@@ -86,13 +86,14 @@ For NIfTI:
 - Affine matrix maps voxel indices to real-world coordinates.
 ```python
 print(nifti_img.affine)
+import nibabel as nib
+orientation = nib.aff2axcodes(nifti_img.affine)
+print("Orientation:", orientation)
 ```
 
 For DICOM:
 - `ImageOrientationPatient` gives direction cosines.
 - `ImagePositionPatient` gives slice origin.
-
-Understanding both is essential to interpret the orientation and alignment of the image in 3D space.
 
 ## Q6: What are the key differences between DICOM and NIfTI?
 
