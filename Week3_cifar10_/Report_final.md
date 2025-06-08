@@ -26,17 +26,29 @@ VGG16 is a type of CNN that is considered to be one of the best computer vision 
 
 - An accuracy of 92% was achieved by the model after training on the CIFAR-10 dataset.
 
+![image](https://github.com/user-attachments/assets/5c150a34-bb50-4771-878b-3cc228e44bb4)
+
+
 2. VGG19 model
 
 The VGG19 model has the same basic idea as the VGG16 model, with the exception that it supports 19 layers. The numbers “16” and “19” refer to the model’s weight layers. In comparison to VGG16, VGG19 contains three extra convolutional layers.
 
 - An accuracy of 75.39% was achieved by the model after training on the CIFAR-10 dataset
 
+
   CNN Models
 
 A Convolutional Neural Network (CNN), also known as ConvNet, is a specialized type of deep learning algorithm mainly designed for tasks that necessitate object recognition, including image classification, detection, and segmentation.
 
 We have used CNN models with different layers – 8, 12, 14 and 19. It was expected that the accuracy would increase on adding more layers but that turned out to be false. At first the accuracy increased from 70.20% in 8-layer to 86.84% in 12-layer since more features are getting extracted. But then it declines to 67.29% in 14-layer and 10% in 19-layer. Due to overfitting, additional stacked layers slow network speed. Specifically the model has reduced training error but larger testing error. As the network depth rises, the accuracy saturates and declines quickly.
+
+![image](https://github.com/user-attachments/assets/e15a53df-423a-479c-8845-aeb482fe294c)
+
+![image](https://github.com/user-attachments/assets/0069001b-1a68-4dd4-aafb-9e3e7d0edf04)
+
+![image](https://github.com/user-attachments/assets/31679d22-aafb-497a-ad2d-b0048763deee)
+
+![image](https://github.com/user-attachments/assets/a175a829-89d6-4878-a473-9c20a944b48c)
 
 ResNet models
 
@@ -48,6 +60,9 @@ ResNet-50
 - Architecture: Uses bottleneck structures (3-layer blocks) for efficiency.
 - Performance: Achieves good accuracy with a balance between depth and computational cost.
 
+![WhatsApp Image 2025-06-09 at 00 19 02_dfe5f684](https://github.com/user-attachments/assets/6ec5bfe2-e524-40cd-a738-13a72d3636b7)
+
+
 ResNet-152
 
 - Depth: 152 layers
@@ -55,6 +70,9 @@ ResNet-152
 - Performance: Provides higher accuracy, but at the cost of increased computational complexity.
 - ResNet-50 is generally faster for inference due to its lower complexity.
 - ResNet-152 will have a larger model size due to the additional parameters.
+
+![image](https://github.com/user-attachments/assets/44c0cf24-d3db-459c-a6a9-88aecf3c2a5d)
+
 
 We achieved an accuracy of **94% on ResNet-50** and **95% on ResNet-152** after training them on the CIFAR-10 dataset.
 
