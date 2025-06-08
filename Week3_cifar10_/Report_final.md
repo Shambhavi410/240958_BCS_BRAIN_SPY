@@ -42,11 +42,19 @@ A Convolutional Neural Network (CNN), also known as ConvNet, is a specialized ty
 
 We have used CNN models with different layers – 8, 12, 14 and 19. It was expected that the accuracy would increase on adding more layers but that turned out to be false. At first the accuracy increased from 70.20% in 8-layer to 86.84% in 12-layer since more features are getting extracted. But then it declines to 67.29% in 14-layer and 10% in 19-layer. Due to overfitting, additional stacked layers slow network speed. Specifically the model has reduced training error but larger testing error. As the network depth rises, the accuracy saturates and declines quickly.
 
+CNN 14
+
 ![image](https://github.com/user-attachments/assets/e15a53df-423a-479c-8845-aeb482fe294c)
+
+CNN 12
 
 ![image](https://github.com/user-attachments/assets/0069001b-1a68-4dd4-aafb-9e3e7d0edf04)
 
+CNN 19
+
 ![image](https://github.com/user-attachments/assets/31679d22-aafb-497a-ad2d-b0048763deee)
+
+CNN 8
 
 ![image](https://github.com/user-attachments/assets/a175a829-89d6-4878-a473-9c20a944b48c)
 
